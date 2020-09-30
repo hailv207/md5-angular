@@ -4,22 +4,23 @@ import {UserComponent} from './user/user.component';
 import {EditUserComponent} from './edit-user/edit-user.component';
 import {DeleteUserComponent} from './delete-user/delete-user.component';
 import {CreateUserComponent} from './create-user/create-user.component';
+import {AppComponent} from './app.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'users',
     component: UserComponent
   },
   {
-    path:'edit/:id',
+    path:'users/edit/:id',
     component: EditUserComponent
   },
   {
-    path: 'delete/:id',
+    path: 'users/delete/:id',
     component: DeleteUserComponent
   },
   {
-    path: 'create',
+    path: 'users/create',
     component: CreateUserComponent
   }
 ];

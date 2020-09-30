@@ -1,7 +1,7 @@
 <div class="container-xl ">
   <h2 class="text-center">USERS</h2>
   <div class="text-right">
-    <a [routerLink]="'/create/'" class="btn btn-primary mb-3">Create new user</a>
+    <a [routerLink]="'/users/create/'" class="btn btn-primary mb-3">Create new user</a>
   </div>
   <table class="table table-bordered">
     <tr>
@@ -16,8 +16,8 @@
       <td>{{u.id}}</td>
       <td>{{u.name}}</td>
       <td>{{u.address}}</td>
-      <td class="text-center"><a class="btn btn-warning" [routerLink]="'/edit/' + u.id">Edit</a></td>
-      <td class="text-center"><a class="btn btn-danger" [routerLink]="'/delete/' + u.id">Delete</a></td>
+      <td class="text-center"><a class="btn btn-warning" [routerLink]="'/users/edit/' + u.id">Edit</a></td>
+      <td class="text-center"><a class="btn btn-danger" [routerLink]="'/users/delete/' + u.id">Delete</a></td>
     </tr>
   </table>
 </div>
