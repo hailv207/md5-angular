@@ -1,0 +1,23 @@
+<div class="container-xl ">
+  <h2 class="text-center">USERS</h2>
+  <div class="text-right">
+    <a [routerLink]="'/create/'" class="btn btn-primary mb-3">Create new user</a>
+  </div>
+  <table class="table table-bordered">
+    <tr>
+      <th>User Id</th>
+      <th>User name</th>
+      <th>User address</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+
+    <tr *ngFor="let u of getAllUsers()">
+      <td>{{u.id}}</td>
+      <td>{{u.name}}</td>
+      <td>{{u.address}}</td>
+      <td class="text-center"><a class="btn btn-warning" [routerLink]="'/edit/' + u.id">Edit</a></td>
+      <td class="text-center"><a class="btn btn-danger" [routerLink]="'/delete/' + u.id">Delete</a></td>
+    </tr>
+  </table>
+</div>

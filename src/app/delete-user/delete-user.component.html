@@ -1,0 +1,14 @@
+<div class="container-xl">
+  <form (ngSubmit)="deleteUser()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input class="form-control" disabled type="text" id="name" name="name" [(ngModel)]="user.name">
+    </div>
+    <div class="form-group">
+      <label for="address">Address</label>
+      <input class="form-control" disabled type="text" name="address" id="address" [(ngModel)]="user.address">
+    </div>
+    <input type="submit" class="btn btn-danger" value="Delete">
+    <a [routerLink]="'/'" class="btn btn-info ml-3">Back</a>
+  </form>
+</div>
