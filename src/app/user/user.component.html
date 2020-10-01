@@ -11,8 +11,7 @@
       <th>Edit</th>
       <th>Delete</th>
     </tr>
-
-    <tr *ngFor="let u of getAllUsers()">
+    <tr *ngFor="let u of response">
       <td>{{u.id}}</td>
       <td>{{u.name}}</td>
       <td>{{u.address}}</td>
